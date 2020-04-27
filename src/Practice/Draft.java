@@ -1,12 +1,8 @@
 package Practice;
 
-
-import java.util.Scanner;
-
 public class Draft {
-    public static void main(String[] args) {
-
-
-
-    }
+   public static void main(String[] args) {
+      System.out.println("Hello World");
+      System.out.println();
+   }
 }
