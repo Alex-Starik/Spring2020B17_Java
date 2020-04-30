@@ -25,7 +25,7 @@ public class Bulk_ContainsAll {
         boolean result2 = list1.containsAll(Arrays.asList(10, 20, 60));
         System.out.println(result2);
 
-        int [] data = {10, 30 , 40};
+        Integer [] data = {10, 30 , 40};
 
         boolean result3 = list1.containsAll(Arrays.asList(data));
 
