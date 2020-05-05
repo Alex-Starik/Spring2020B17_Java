@@ -7,7 +7,7 @@ public class Practice_CustomClass_05_05_2020_Pizza {
     String size;
     int numCheese;
     int numPepper;
-    double totalCost = 0;
+
 
     public void customizeOrder(){
         System.out.println("What the size would you like to choose? Small, Medium or Large?");
@@ -22,7 +22,7 @@ public class Practice_CustomClass_05_05_2020_Pizza {
     }
 
     public double calcCost(){
-
+        double totalCost = 0;
         if (size.equalsIgnoreCase("small")) {
             totalCost += 10;
         } else if (size.equalsIgnoreCase("medium")) {
@@ -38,6 +38,6 @@ public class Practice_CustomClass_05_05_2020_Pizza {
     }
 
     public String toString(){
-        return ("Your order is: size - "+size+", quantity of cheese topping - "+numCheese+", quantity of pepperoni topping - "+numPepper+". Total price is: "+totalCost);
+        return ("Your order is: size - "+size+", quantity of cheese topping - "+numCheese+", quantity of pepperoni topping - "+numPepper+". Total price is: "+calcCost());
     }
 }

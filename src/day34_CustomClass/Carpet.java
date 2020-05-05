@@ -18,4 +18,11 @@ public class Carpet {
         unitPrice = carpetUnitPrice;
         isPersian = carpetPersian;
     }
+
+    public String toString(){
+        return "width: "+width+
+                "\nlength: "+length+
+                "\nunit price "+unitPrice+
+                "\nTotal cost "+calcCost();
+    }
 }
