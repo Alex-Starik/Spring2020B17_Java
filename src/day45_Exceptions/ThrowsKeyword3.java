@@ -1,0 +1,14 @@
+package day45_Exceptions;
+
+public class ThrowsKeyword3 {
+    public static void main(String[] args) throws InterruptedException{
+        System.out.println("Java");
+        Thread.sleep(3000);
+        System.out.println("Cybertek");
+        Thread.sleep(3000);
+        System.out.println("Batch 18");
+        Thread.sleep(4000);
+        System.out.println("Complete");
+
+    }
+}

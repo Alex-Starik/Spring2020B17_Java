@@ -1,6 +1,8 @@
 package day38_Conctructors;
 
 
+import java.text.DecimalFormat;
+import java.util.Scanner;
 
 /*
 Create a class called Circle
@@ -15,12 +17,15 @@ Create a class called Circle
                   diameter of circle = 2 * radius
                   area of circle = PI * r * r
  */
-public class Cicrcle {
-    static double PI = 3.14;
+public class Circle {
+    static double PI;
     double radius;
     double diameter;
+    static {
+        PI = 3.14;
+    }
 
-    public Cicrcle(double radius){
+    public Circle(double radius){
         this.radius = radius;
         diameter = radius * 2;
     }
@@ -44,10 +49,14 @@ public class Cicrcle {
 class CircleObject {
 
     public static void main(String[] args) {
-        double r = 7.1;
+        DecimalFormat df = new DecimalFormat("0.000");
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the radius of the circle: ");
+        double r = scan.nextDouble();
 
-        Cicrcle circle1 = new Cicrcle(r);
-
-        System.out.println(circle1.area());
+        Circle circle1 = new Circle(r);
+        System.out.println("Diameter is: "+circle1.diameter);
+        System.out.println("Peremeter is: "+ circle1.perimeter());
+        System.out.println("Area is: "+df.format(circle1.area()));
     }
 }
