@@ -17,7 +17,7 @@ Create a class called Circle
                   diameter of circle = 2 * radius
                   area of circle = PI * r * r
  */
-public class Circle {
+class Circle {
     static double PI;
     double radius;
     double diameter;
